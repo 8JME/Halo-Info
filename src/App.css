@@ -1,3 +1,8 @@
+@font-face {
+  src: url(assets/fonts/Halo\ Outline.ttf);
+  font-family: halo-outline;
+}
+
 .App {
   text-align: center;
 }
@@ -21,4 +26,11 @@ nav {
 
 .navStyle {
   color:white;
+}
+
+#haloFont {
+  font-family: halo-outline;
+  font-size: 8rem;
+  font-weight: 900;
+  text-shadow: 2px 2px #2e2c2c;
 }
