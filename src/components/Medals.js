@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import '../App.css';
 import { MEDALS } from '../data/medals';
 import { Card, CardBody,CardHeader, CardTitle } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import MedalDetail from './MedalDetails';
 
 
 function Medals() {
@@ -40,7 +41,7 @@ function Medals() {
         <div className="container col-md-3">
         <div className="m-1" key={medal.id}>
           <Card onClick={()=>{}}>
-            <CardHeader><CardTitle><Link to={`/medal/${medal.id}`}>{medal.name}</Link></CardTitle></CardHeader>
+            <CardHeader><CardTitle className="card-font"><Link to={`/medal/${medal.id}`}>{medal.name}</Link></CardTitle></CardHeader>
             <CardBody>
             <img width="100%" style={imgPos} />
             </CardBody>

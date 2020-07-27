@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import ImageSlide from './ImageSlides';
 
 function About() {
   return (
@@ -19,6 +20,8 @@ function About() {
         what the Halo universe future brings.  I hope this site serves as a handy
         place to grab Halo gaming information.
       </p>
+      <hr />
+      <ImageSlide />
     </div>
   );
 }

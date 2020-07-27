@@ -3407,7 +3407,7 @@ export const MEDALS = [{
     "id": "3148489433",
     "contentId": "d7775e79-aa6e-4c81-9ce4-2d24c94666a0"
   }, {
-    "name": "Team Takedown",
+    "name": "Team Takedown (Active)",
     "description": "Kill an opponent while being assisted by at least 3 friendly players",
     "classification": "Style",
     "difficulty": 240,
@@ -3423,7 +3423,7 @@ export const MEDALS = [{
     "id": "194124164",
     "contentId": "99c2fdb9-6da5-4d0a-b7b9-c98c5c932f13"
   }, {
-    "name": "Team Takedown",
+    "name": "Team Takedown (Assist)",
     "description": "Assist in a Team Takedown",
     "classification": "Style",
     "difficulty": 245,

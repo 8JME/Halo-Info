@@ -3,8 +3,15 @@
   font-family: halo-outline;
 }
 
+@font-face {
+  src: url(assets/fonts/halo-solid.ttf);
+  font-family: halo;
+}
+
 .App {
   text-align: center;
+  color: white;
+  background-color: #2e2c2c;
 }
 
 nav {
@@ -39,3 +46,30 @@ nav {
 .paragrap-style {
   text-align: left;
 }
+
+.about-bg {
+  color: white;
+}
+
+/* Medals Main Page */
+.card-font {
+  
+}
+
+/* Medals Details Page */
+.medal-detail-name {
+  font-family: halo;
+  font-weight: bold;
+  text-shadow: 4px 5px rgb(58, 102, 57);;
+}
+ul{
+  color: #cecece;
+  list-style: none;
+  text-align: left;
+}
+
+span {
+  color: white;
+  font-weight: 900;
+}
+
