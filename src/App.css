@@ -32,5 +32,10 @@ nav {
   font-family: halo-outline;
   font-size: 8rem;
   font-weight: 900;
-  text-shadow: 2px 2px #2e2c2c;
+  text-shadow: 8px 8px #2e2c2c;
+}
+
+/* About Page */
+.paragrap-style {
+  text-align: left;
 }
