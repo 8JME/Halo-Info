@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import ImageSlide from './ImageSlides';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 function About() {
   return (
@@ -21,7 +22,13 @@ function About() {
         place to grab Halo gaming information.
       </p>
       <hr />
-      <ImageSlide />
+      <FadeTransform
+        in
+        transformProps={{
+          exitTransform: 'scale(0.5) translateY(-50%)'
+        }}>
+          <ImageSlide />
+        </FadeTransform>
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import '../App.css';
 import { MEDALS } from '../data/medals';
 import { Card, CardBody,CardHeader, CardTitle } from 'reactstrap';
-import { Link, Route } from 'react-router-dom';
-import MedalDetail from './MedalDetails';
+import { Link } from 'react-router-dom';
+import { FadeTransform } from 'react-animation-components';
 
 
 function Medals() {
@@ -39,14 +39,20 @@ function Medals() {
       }
       return (
         <div className="container col-md-3">
-        <div className="m-1" key={medal.id}>
-          <Card onClick={()=>{}}>
-            <CardHeader><CardTitle className="card-font"><Link to={`/medal/${medal.id}`}>{medal.name}</Link></CardTitle></CardHeader>
-            <CardBody>
-            <img width="100%" style={imgPos} />
-            </CardBody>
-          </Card>
-      </div>
+          <div className="m-1" key={medal.id}>
+            <FadeTransform
+              in
+              transformProps={{
+                exitTransform: 'scale(0.5) translateY(50%)'
+              }}>
+                <Card onClick={()=>{}}>
+                  <CardHeader><CardTitle className="card-font"><Link to={`/medal/${medal.id}`}>{medal.name}</Link></CardTitle></CardHeader>
+                  <CardBody>
+                  <img width="100%" style={imgPos} />
+                  </CardBody>
+                </Card>
+              </FadeTransform>
+          </div>
         </div>
         )
     })
